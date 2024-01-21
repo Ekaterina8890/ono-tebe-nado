@@ -264,7 +264,6 @@ body {
     flex-direction: column;
     display: inline-flex;
     justify-content: space-between;
-    align-items: space-between;
     gap: 24px;
 } 
 

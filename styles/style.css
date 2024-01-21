@@ -76,7 +76,7 @@ body {
     margin: 0 106px 0 0;
 }
 
-.cover{
+.cover {
     color: #fff;
     height: 757px;
     position: relative;
@@ -262,7 +262,6 @@ body {
     height: 446px;
     display: flex;
     flex-direction: column;
-    display: inline-flex;
     justify-content: space-between;
     gap: 24px;
 } 

@@ -30,11 +30,11 @@
       </nav>
       <a class="header__logo">
         <img class="header__logo-image"
-        src="images/logo-black.svg"
+        src="images\logo-black.svg"
         alt="логотип оно тебе надо"
         >
       </a>
-       <ul class="address">
+       <lu class="address">
         <li class="header__address">
          <a class="contact-list" 
           href="tel:+99995555555">
@@ -50,13 +50,13 @@
          <address class="header__address" >
           наб. Принсенграхт 263-<br>265, Амстердам
          </address> 
-       </ul>
+        </lu>
     </header>
     <main>
       <section class="cover">
         <a href="#">
           <img class="overlay background" 
-            src="images/cover.jpg" 
+            src="images\cover.jpg" 
             alt="абстрактный разноцветный фон"
           >
         </a>
@@ -75,7 +75,7 @@
             Аукцион вещей, в которые никто не верил
           </h2>
           <button class="bet-button">
-            <a class="bet-button-link" href="#">Сделать ставку</a>
+          <a class="bet-button-link" href="#">Сделать ставку</a>
           </button>
         </div>
       </section>
@@ -87,7 +87,7 @@
           <li class="lots__card-list-item card-link">
             <article class="card card_type_film">
               <img class="card overlay" 
-                src="images/card-lot-01.jpg"
+                src="images\card-lot-01.jpg"
                 alt="кадр из фильма">
               <h4 class="card__title">
                 Фильм режиссёра, который бросил киношколу
@@ -97,23 +97,23 @@
               </p>
             </article>
           </li>
-            <li class="lots__card-list-item card-link">
-              <article class="card card_type_book">
-                <img class="card overlay"
-                  src="images/card-lot-02.jpg"
-                  alt="красная дверь со львом на двери">
-                <h5 class="card__title">
-                  Книга, где описан один скучный день из жизни рекламного агента
-                </h5>
-                <p class="card__text">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                </p>
-              </article>
-            </li>
+          <li class="lots__card-list-item card-link">
+            <article class="card card_type_book">
+              <img class="card overlay"
+                src="images\card-lot-02.jpg"
+                alt="красная дверь со львом на двери">
+              <h5 class="card__title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h5>
+              <p class="card__text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+              </p>
+            </article>
+          </li>
           <li class="lots__card-list-item card-link">
             <article class="card card_type_picture">
               <img class="card overlay" 
-              src="images/card-lot-03.jpg"
+              src="images\card-lot-03.jpg"
               alt="картина графическая абстракция">
             <h6 class="card__title">
               Картина, которую повторит даже 5-летний сын маминой подруги
@@ -131,7 +131,7 @@
       <section class="about" id="about">
         <a class="about__logo">
           <img class="about__logo-image"
-            src="images/logo-white.svg"
+            src="images\logo-white.svg"
             alt="логотип оно вам надо">
         </a>
         <div class="about__column">
@@ -182,21 +182,21 @@
         <li class=" social-list-item ">
           <a class="social-link" href="#">
             <img class="footer__social-icon"
-              src="images/yt.svg"
+              src="images\yt.svg"
               alt="ютуб">
           </a>
         </li>
         <li class="social-link">
           <a class="social-link" href="#">
             <img class="footer__social-icon"
-              src="images/vk.svg"
+              src="images\vk.svg"
               alt="ВКонтакте">
           </a>
         </li>
         <li class="social-link">
           <a class="social-link" href="#">
             <img class="footer__social-icon" 
-              src="images/pinterest.svg"
+              src="images\pinterest.svg"
               alt="пинтерест">
             </a>
         </li>

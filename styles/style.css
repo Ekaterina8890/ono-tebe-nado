@@ -64,6 +64,7 @@ body {
 .header__address {
     display: flex;
     flex-direction: column;
+    font-style: normal;
     text-align: start;
     align-content: end;
     justify-self: start;

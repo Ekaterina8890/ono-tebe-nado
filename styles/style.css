@@ -1,1 +1,344 @@
 /* место для вашего кода */
+body {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 1100px;
+    background-color:white;
+}
+
+.header {
+    box-sizing: border-box;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 454px 148px 184px 266px;
+    grid-template-areas: 
+    "header__menu header__logo . address";
+    height: 293px;
+    align-content: center;
+    font-size: 18px;
+    margin: 0 24px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: header__menu;
+}
+
+.header__links-list {
+    list-style: circle;
+    display: flex;
+    gap: 35px;
+}
+
+.header__links-list-item_no-bullit {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: header__logo;
+}
+
+.address {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 135%;
+    letter-spacing: 0.18px;
+    padding-right: 24px;
+    grid-area: address;
+}
+
+.header__address {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-content: end;
+    justify-self: start;
+}
+
+.contact-list {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin: 0 106px 0 0;
+}
+
+.cover{
+    color: #fff;
+    height: 757px;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(40%);
+    background-size: cover;
+}
+    
+.cover__title {
+    padding: 165px 20px 135px 50px;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
+}
+
+.aligned-text {
+    display: block;
+    letter-spacing: 30px;
+} 
+
+.aligned-text_center {
+    text-align: center;
+}  
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    display: inline-block;
+    letter-spacing: 30px;
+}
+
+.cover__description {
+    text-transform: uppercase;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0;
+}
+
+.cover__description-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    word-spacing: 24.2px;
+    text-transform: uppercase;
+}
+
+.bet-button {
+    box-sizing: border-box;
+    width: 256px;
+    height: 51px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #FFF;
+}
+.bet-button-link {
+    text-decoration: none;
+}
+
+.lots {
+    padding: 179px 24px 0;
+    height: 692px;
+}
+
+.lots__heading {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-bottom: 27px;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    height: 563px;
+    list-style: none;
+}
+
+.card {
+    width: 334px;
+    height: 563px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_type_film {
+    flex-grow: 1;
+}
+
+.card_type_book {
+    flex-grow: 2;
+}  
+.card_type_picture {
+    flex-grow: 3;
+}
+
+.card__title {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding: 51px 40px 0;
+}
+
+.card__text {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 120%; /* 24px */
+    padding: 0 40px 48px;
+}
+
+.lots__look-more-link {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 30px 40px 0;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    display: inline-block;
+} 
+
+.about {
+    width: 1052px;
+    height: 595px;
+    display: flex;
+    padding: 146px 24px 0;
+    justify-content: space-between;
+}
+
+.about__logo {
+    display: block;
+    margin: 35px 0 0 37px;
+    width: 240px;
+    height: 240px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    padding: 64px 46px;
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    margin-top: 136px;
+    width: 693px;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 24px;
+} 
+
+.about__title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 76px;
+}
+.about__text {
+    color: #000;
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
+
+.footer {
+    width: 1100px;
+    height: 97px;
+    display: grid;
+    grid-template-columns: 366px 366px 366px;
+    grid-template-areas: 
+    "address menu social-list";
+    justify-content: space-between;
+    padding: 181px 50px 88px;
+    align-items: start;
+    justify-items: center;
+    
+} 
+
+.footer__address {
+    align-items: start;
+    justify-items: center;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    grid-area: menu;
+}
+
+.footer__menu-list {
+    list-style: none;
+}
+
+.footer__menu-list-item {
+    list-style: none;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    grid-area: social-list;
+} 
+
+.footer__social-list-item {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+} 

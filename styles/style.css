@@ -14,10 +14,13 @@ body {
     grid-template-columns: 454px 148px 184px 266px;
     grid-template-areas: 
     "header__menu header__logo . address";
-    height: 293px;
+    height: 105px;
     align-content: center;
+    align-items: center;
     font-size: 18px;
-    margin: 0 24px;
+    margin: 50px 0px;
+    letter-spacing: 0.25px;
+    padding: 96px 24px 96px;
 }
 
 .header__menu {
@@ -25,12 +28,13 @@ body {
     justify-content: space-around;
     align-items: center;
     grid-area: header__menu;
+    padding-right: 11px;
 }
 
 .header__links-list {
     list-style: circle;
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
 
 .header__links-list-item_no-bullit {
@@ -44,7 +48,8 @@ body {
 }
 
 .header__logo {
-    display: flex;
+    display: block;
+    padding: 0px 6px;
     justify-content: space-around;
     align-items: center;
     grid-area: header__logo;
@@ -55,9 +60,8 @@ body {
     color: #000;
     font-size: 18px;
     font-style: normal;
-    line-height: 135%;
-    letter-spacing: 0.18px;
-    padding-right: 24px;
+    letter-spacing: 0.08px;
+    padding-right: 16px;
     grid-area: address;
 }
 
@@ -66,8 +70,9 @@ body {
     flex-direction: column;
     font-style: normal;
     text-align: start;
-    align-content: end;
+    align-content: start;
     justify-self: start;
+    line-height: 128%;
 }
 
 .contact-list {
@@ -77,9 +82,13 @@ body {
 }
 
 .cover {
+    width: 100%;
     color: #fff;
     height: 757px;
+    margin: 0;
+    overflow: hidden;
     position: relative;
+    min-width: 1100px;
 }
 
 .overlay {
@@ -91,10 +100,11 @@ body {
     z-index: -1;
     filter: brightness(40%);
     background-size: cover;
+   
 }
     
 .cover__title {
-    padding: 165px 20px 135px 50px;
+    padding: 164px 20px 96px 50px;
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
@@ -103,7 +113,8 @@ body {
 
 .aligned-text {
     display: block;
-    letter-spacing: 30px;
+    letter-spacing: 31px;
+    padding: 0px 0 13px;
 } 
 
 .aligned-text_center {
@@ -129,15 +140,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 0;
+    padding: 0 49px 0 79px;
 }
 
 .cover__description-text {
     font-size: 22px;
     font-weight: 400;
     line-height: 28px; /* 127.273% */
-    word-spacing: 24.2px;
+    word-spacing: 18.2px;
     text-transform: uppercase;
+
 }
 
 .bet-button {
@@ -237,13 +249,13 @@ body {
     width: 1052px;
     height: 595px;
     display: flex;
-    padding: 146px 24px 0;
+    margin: 146px 25px 0;
     justify-content: space-between;
 }
 
 .about__logo {
     display: block;
-    margin: 35px 0 0 37px;
+    margin: 35px 0 0 47px;
     width: 240px;
     height: 240px;
     background: #000;
@@ -274,6 +286,7 @@ body {
     text-transform: uppercase;
     padding-bottom: 76px;
 }
+
 .about__text {
     color: #000;
     font-size: 20px;
@@ -288,15 +301,16 @@ body {
     grid-template-areas: 
     "address menu social-list";
     justify-content: space-between;
-    padding: 181px 50px 88px;
+    padding: 182px 0px;
     align-items: start;
     justify-items: center;
-    
 } 
 
 .footer__address {
     align-items: start;
     justify-items: center;
+    padding-right: 10px;
+    line-height: 135%;
 }
 
 .footer__menu {
@@ -308,14 +322,18 @@ body {
     font-style: normal;
     line-height: normal;
     grid-area: menu;
+    text-decoration: none;
 }
 
-.footer__menu-list {
+.footer__menu-link {
     list-style: none;
+    border-bottom: 1px solid black;
+
 }
 
 .footer__menu-list-item {
     list-style: none;
+    text-decoration: none;
 }
 
 .footer__menu-link_active {
@@ -327,6 +345,7 @@ body {
     display: flex;
     gap: 48px;
     grid-area: social-list;
+    padding-left: 26px;
 } 
 
 .footer__social-list-item {

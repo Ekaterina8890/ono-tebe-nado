@@ -14,13 +14,12 @@ body {
     grid-template-columns: 454px 148px 184px 266px;
     grid-template-areas: 
     "header__menu header__logo . address";
-    height: 105px;
     align-content: center;
     align-items: center;
     font-size: 18px;
-    margin: 50px 0px;
+    margin: 92px 24px 93px;
     letter-spacing: 0.25px;
-    padding: 96px 24px 96px;
+    
 }
 
 .header__menu {
@@ -45,6 +44,10 @@ body {
 .header__link {
     text-decoration: none;
     border-bottom: 1px solid black;
+}
+
+.header__link_active{
+    text-decoration: none;
 }
 
 .header__logo {
@@ -84,27 +87,27 @@ body {
 .cover {
     width: 100%;
     color: #fff;
-    height: 757px;
     margin: 0;
-    overflow: hidden;
     position: relative;
     min-width: 1100px;
-}
 
+}
+.background {
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .overlay {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
     z-index: -1;
     filter: brightness(40%);
-    background-size: cover;
-   
 }
-    
+
 .cover__title {
-    padding: 164px 20px 96px 50px;
+    padding: 164px 50px 115px;
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
@@ -114,7 +117,7 @@ body {
 .aligned-text {
     display: block;
     letter-spacing: 31px;
-    padding: 0px 0 13px;
+    padding: 0px 0 10px;
 } 
 
 .aligned-text_center {
@@ -123,6 +126,7 @@ body {
 
 .aligned-text_right {
     text-align: right;
+    letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
@@ -130,8 +134,8 @@ body {
 }
 
 .no-letter-spacing {
-    display: inline-block;
-    letter-spacing: 30px;
+
+    letter-spacing: 0px;
 }
 
 .cover__description {
@@ -140,7 +144,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 49px 0 79px;
+    padding: 0 49px 50px 79px;
 }
 
 .cover__description-text {
@@ -158,7 +162,6 @@ body {
     height: 51px;
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 500;
     line-height: normal;
@@ -172,7 +175,6 @@ body {
 
 .lots {
     padding: 179px 24px 0;
-    height: 692px;
 }
 
 .lots__heading {
@@ -193,9 +195,9 @@ body {
 }
 
 .lots__card-list-item {
-    width: 334px;
-    height: 563px;
     list-style: none;
+    
+    
 }
 
 .card {
@@ -204,17 +206,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1
 }
 
 .card_type_film {
-    flex-grow: 1;
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card_type_book {
-    flex-grow: 2;
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }  
+
 .card_type_picture {
-    flex-grow: 3;
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card__title {
@@ -247,9 +260,8 @@ body {
 
 .about {
     width: 1052px;
-    height: 595px;
     display: flex;
-    margin: 146px 25px 0;
+    margin: 146px 25px 0px;
     justify-content: space-between;
 }
 
@@ -270,8 +282,7 @@ body {
 
 .about__column {
     margin-top: 136px;
-    width: 693px;
-    height: 446px;
+    max-width: 693px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -291,19 +302,22 @@ body {
     color: #000;
     font-size: 20px;
     line-height: 24px; /* 120% */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .footer {
     width: 1100px;
-    height: 97px;
     display: grid;
     grid-template-columns: 366px 366px 366px;
     grid-template-areas: 
     "address menu social-list";
     justify-content: space-between;
-    padding: 182px 0px;
+    padding: 182px 49px 88px;
     align-items: start;
     justify-items: center;
+    margin-left: ;
 } 
 
 .footer__address {
@@ -323,12 +337,13 @@ body {
     line-height: normal;
     grid-area: menu;
     text-decoration: none;
+    padding-right: 97px;
 }
 
 .footer__menu-link {
     list-style: none;
+    text-decoration: none;
     border-bottom: 1px solid black;
-
 }
 
 .footer__menu-list-item {
@@ -345,7 +360,7 @@ body {
     display: flex;
     gap: 48px;
     grid-area: social-list;
-    padding-left: 26px;
+    padding-right: 70px;
 } 
 
 .footer__social-list-item {

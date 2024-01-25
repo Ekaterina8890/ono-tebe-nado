@@ -17,7 +17,7 @@ body {
     align-content: center;
     align-items: center;
     font-size: 18px;
-    margin: 92px 24px 93px;
+    margin: 93px 24px 93px;
     letter-spacing: 0.25px;
 }
 
@@ -347,7 +347,7 @@ body {
     line-height: normal;
     grid-area: menu;
     text-decoration: none;
-    padding-right: 97px;
+    padding-right: 93px;
 }
 
 .footer__menu-link {
